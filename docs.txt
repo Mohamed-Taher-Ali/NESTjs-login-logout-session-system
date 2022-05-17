@@ -33,3 +33,8 @@ notes ::
         6- type-script for organizing & OOP
         7- injection and SOLID principals
         8- robust session checking by redis-cache
+
+scenarios ::
+    register > login > getUsers with auth in header > (error (not ADMIN))
+    login (admin creds) > getUsers with auth in header > users[]
+    login (admin creds) > logout > getUsers with auth in header > (error (session destroyed))
