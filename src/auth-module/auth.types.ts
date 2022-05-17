@@ -1,0 +1,1 @@
+export type UserRolesCase = 'in' | 'not-in';

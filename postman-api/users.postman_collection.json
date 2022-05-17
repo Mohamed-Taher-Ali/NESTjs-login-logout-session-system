@@ -1,0 +1,28 @@
+{
+	"variables": [],
+	"info": {
+		"name": "users",
+		"_postman_id": "3d84e91f-47d0-907c-4cc4-8be7cb86cc7f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/users/",
+			"request": {
+				"url": "http://localhost:3000/api/users/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE3NDZmZmE1LWZiMjctNDY2My1hOThkLTdmYjRhYWQwNDI2YiIsImlhdCI6MTY1Mjc2Nzg5OX0.Hu_2fc2GO39wPzNBuhulGH7LX4QRBgDsNupvLilHhZQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get-users"
+			},
+			"response": []
+		}
+	]
+}

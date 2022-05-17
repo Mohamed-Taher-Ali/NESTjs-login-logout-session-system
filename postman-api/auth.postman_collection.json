@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "auth",
+		"_postman_id": "0938bff9-4293-fb68-b6d7-1b362fa33278",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/auth/register",
+			"request": {
+				"url": "http://localhost:3000/api/auth/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"user@user.com\",\n\t\"password\": \"12345\",\n\t\"name\": \"user\"\n}"
+				},
+				"description": "register"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/auth/login",
+			"request": {
+				"url": "http://localhost:3000/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@admin.com\",\n\t\"password\": \"12345\"\n}"
+				},
+				"description": "login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/auth/logout",
+			"request": {
+				"url": "http://localhost:3000/api/auth/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"a746ffa5-fb27-4663-a98d-7fb4aad0426b\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
