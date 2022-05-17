@@ -1,1 +1,37 @@
 # NESTjs-login-logout-session-system
+
+=====================================================================================================================================
+======================================================= =D=O=C=S= ===================================================================
+=====================================================================================================================================
+
+
+setup ::
+    1- git clone >> https://github.com/Mohamed-Taher-Ali/minimal-e-commerce.git
+    2- create a database in pg name >> login-logout-db OR you can change src/app-configs/config db obj to fit you
+    3- enter root folder
+    4- in terminal >> npm i
+    5- BASE_URL >> http://localhost:3000/api/
+    6- you must add token-value to "authorization" key in request header for authorized routes
+    7- ** all routes authorized except auth
+    8- seed an admin with info (email: admin@admin.com, password: 12345, name: admin)
+
+
+controllers ::
+    1- auth/
+        POST register >> name, email, password
+        POST login >> email, password >> return USER & token
+        POST logout >> id: userId >> return true >> deny the session
+    2- users/
+        GET / >> with 2 query >> offset? | limit? >> return USER[] >> guarded (only for ADMIN role)
+
+
+notes ::
+    ways that facilitated the work
+        1- decoration to handle Auth guard & role guard
+        2- strategy pattern for encryption
+        3- repository pattern for db but didn't be completed
+        4- re-usable methods
+        5- nest-js for modularization
+        6- type-script for organizing & OOP
+        7- injection and SOLID principals
+        8- robust session checking by redis-cache
